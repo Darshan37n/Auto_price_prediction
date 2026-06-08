@@ -41,7 +41,8 @@ A machine learning project that predicts car prices based on technical specifica
   * Detected using IQR method
   * Applied winsorization (capping) to preserve dataset size
 
-- Hybrid Encoding Strategy:
+## Hybrid Encoding Strategy:
+
 | Encoding Type | Features Applied To |
 |---|---|
 | Target Encoding | `make` (high cardinality) |
@@ -55,6 +56,7 @@ Removed multicollinear features using correlation threshold of 0.85
 Dropped: num-of-cylinders, horsepower, length, wheel-base, bore
 
 5. Modeling
+
 | Model | Notes |
 |---|---|
 | Linear Regression | Baseline |
