@@ -42,12 +42,13 @@ A machine learning project that predicts car prices based on technical specifica
   * Applied winsorization (capping) to preserve dataset size
 
 - Hybrid Encoding Strategy:
-  | Encoding Type | Features Applied To |
+| Encoding Type | Features Applied To |
 |---|---|
 | Target Encoding | `make` (high cardinality) |
 | Label Encoding | `fuel-type`, `aspiration`, `engine-location` |
 | Ordinal Encoding | `num-of-doors`, `num-of-cylinders` |
 | One-Hot Encoding | `body-style`, `drive-wheels`, `engine-type`, `fuel-system` |
+
 4. Feature Selection
 
 Removed multicollinear features using correlation threshold of 0.85
@@ -60,7 +61,7 @@ Dropped: num-of-cylinders, horsepower, length, wheel-base, bore
 | Ridge Regression (L2) | Reduces overfitting |
 | Lasso Regression (L1) | Feature sparsity |
 | Gradient Boosting | Strong non-linear learning |
-| **XGBoost** | **Best performance** |
+| **XGBoost** | Best performance |
 
 ## Tools Used
 
